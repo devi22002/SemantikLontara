@@ -6,10 +6,10 @@
 </p>
 
 ## 📌 Deskripsi Proyek
-Sistem ini dibangun menggunakan Streamlit untuk menampilkan isi naskah Lontara — termasuk aksara asli, transliterasi Latin, dan terjemahan Bahasa Indonesia — yang terhubung ke SPARQL endpoint berbasis ontologi RDF.
+Sistem ini dibangun menggunakan Streamlit untuk menampilkan isi naskah Lontara — termasuk aksara asli, transliterasi Latin, dan terjemahan Bahasa Indonesia — yang terhubung ke SPARQL endpoint menggunakan GraphDB berbasis ontologi RDF.
 
 ## 🏛 Konteks Naskah
-Naskah ini berasal dari Sulawesi Selatan dan berisi tentang Isra' Mi'raj Nabi Muhammad SAW, ditulis dalam aksara Lontara dan dimiliki oleh Nasir Kula, disalin kembali sekitar tahun 1890-an.
+Naskah ini berasal dari Sulawesi Selatan dan berisi tentang Isra' Mi'raj Nabi Muhammad SAW, ditulis dalam aksara Lontara yang dimiliki oleh Nasir Kula dan disalin kembali sekitar tahun 1890-an.
 
 ## ⚙️ Panduan Instalasi
 ### 1. Clone Repository
@@ -35,11 +35,14 @@ pip install -r requirements.txt
 ```bash
 streamlit run App.py
 ```
-> 💡 **Catatan**: Pastikan SPARQL endpoint sudah aktif di `http://localhost:7200/repositories/ontology-lontara`. Jika belum, aplikasi akan menampilkan data lokal sebagai fallback.
 
 ## 🧑‍💻 Panduan Pengguna
 ### 1. Buka Browser
-ke alamat yang muncul (biasanya 'http://localhost:8501')
+ke alamat yang muncul pada saat menjalankan aplikasi (biasanya 'http://localhost:8501')
+atau
+menggunakan alamat https://semantiklontara.streamlit.app/
+> 💡 **Catatan**: Pastikan SPARQL endpoint sudah aktif di `http://localhost:7200/repositories/ontology-lontara`. Jika belum, aplikasi akan menampilkan data lokal sebagai fallback.
+
 ### 2. Gunakan Sidebar untuk memilih:
 ![image](https://github.com/user-attachments/assets/09945d3f-46e8-49dd-b079-f670fb68296c)
 
@@ -51,5 +54,5 @@ ke alamat yang muncul (biasanya 'http://localhost:8501')
   ![image](https://github.com/user-attachments/assets/470d3b4a-a7b9-46f5-999f-d42bd3f49ddd)
 
 
-## Lisensi
+## 📄 Lisensi
 MIT License 2025
