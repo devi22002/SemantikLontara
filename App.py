@@ -321,10 +321,10 @@ def main():
     load_css()
     
     # URL endpoint default
-    ngrok_url = "http://localhost:7200" # <-- GANTI DENGAN URL ANDA
+    endpoint_lokal = "http://localhost:7200" # <-- GANTI DENGAN URL ENDPOINT LOKAL ANDA
     repository_name = "ontology-lontara"
 
-    endpoint_url = f"{ngrok_url}/repositories/{repository_name}"
+    endpoint_url = f"{endpoint_lokal}/repositories/{repository_name}"
 
     # Load data from SPARQL (dengan fallback ke data sampel jika gagal)
     df = load_data_from_sparql(endpoint_url)
